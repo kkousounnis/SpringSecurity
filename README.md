@@ -1,2 +1,2 @@
 # SpringSecurity
-Spring boot Security Application Login Registration Thymeleaf
+Registration and Login with Spring Boot, Spring Security, Thymeleaf, Hibernate and MySQL
