@@ -46,7 +46,7 @@ public class UserRegistrationController {
 //        return "redirect:/registration?success";    
 //    }
     @PostMapping
-    public ModelAndView registerUserAccount(@Valid UserRegistrationDto registrationDto, BindingResult bindingResult, ModelMap modelMap) {
+    public ModelAndView registerUserAccount(@Valid @ModelAttribute("user") UserRegistrationDto registrationDto, BindingResult bindingResult, ModelMap modelMap) {
         ModelAndView modelAndView = new ModelAndView();
        
         if (bindingResult.hasErrors()) {

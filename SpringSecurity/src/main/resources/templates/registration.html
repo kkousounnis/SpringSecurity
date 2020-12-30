@@ -44,8 +44,12 @@
                     <form th:action="@{/registration}" method="post" th:object="${user}">
                         <div class="form-group">
                             <label class="control-label" for="firstName"> First Name </label>
+                            
                             <label th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"
                                    class="validation-message"></label>
+                                   
+                                   
+                                   
                             <input id="firstName" class="form-control" th:field="*{firstName}" autofocus="autofocus" th:errorClass="is-invalid "/>
                             <div th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Error</div>
                         </div>

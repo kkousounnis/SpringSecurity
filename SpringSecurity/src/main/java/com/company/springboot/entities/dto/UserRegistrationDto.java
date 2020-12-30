@@ -9,6 +9,7 @@ public class UserRegistrationDto {
     
     
     @NotBlank(message = "Enter first Name")
+    @Size(min=6, max=15)
     private String firstName;
     @NotBlank(message = "Enter last Name")
     private String lastName;
